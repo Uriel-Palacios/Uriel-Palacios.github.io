@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="canonical" href="https://uriel-palacios.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://uriel-palacios.github.io/">
+<meta property="og:image" content="https://uriel-palacios.github.io/img/entrelazados.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<title>Uriel Palacios Portfolio</title>
+<meta name="description" content="Uriel Palacios — video editor, motion designer and VFX compositor based in Rosario, Argentina (remote). Disney+, Universal, Telemundo, Paladini, Pilay, OSDE. Generative AI video production.">
+<meta property="og:title" content="Uriel Palacios — Video, Motion & VFX">
+<meta property="og:description" content="Video editor, motion designer and VFX compositor. 10+ years in TV, agencies and international projects. Remote from Argentina.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Uriel Palacios", "jobTitle": ["Video Editor", "Motion Designer", "VFX Compositor", "Audiovisual Producer"], "email": "mailto:urielalej@gmail.com", "address": {"@type": "PostalAddress", "addressLocality": "Rosario", "addressCountry": "AR"}, "sameAs": ["https://www.linkedin.com/in/uriel--palacios", "https://www.youtube.com/watch?v=dv-MB7ry_mk"], "knowsLanguage": ["es", "en"], "knowsAbout": ["Video editing", "Motion graphics", "2D animation", "VFX compositing", "Generative AI video production", "Content marketing"], "alumniOf": {"@type": "CollegeOrUniversity", "name": "Universidad Nacional de Rosario"}, "workExample": [{"@type": "VideoObject", "name": "Entrelazados S2 · VFX", "description": "VFX compositing for season 2, in After Effects. Role: VFX compositing.", "url": "https://vimeo.com/1246541407", "creditText": "Disney+ · with MalditoMaus · 2022"}, {"@type": "VideoObject", "name": "Pilay · TV rebrand", "description": "TV spot for the mid-year rebrand. Role: Editing + motion graphics.", "url": "https://vimeo.com/1246545247", "creditText": "Pilay · Borgonovo Publicidad · 2026"}, {"@type": "VideoObject", "name": "Paladini · 102 years", "description": "Corporate spot, with graphics 3D-tracked onto locations. Role: Editing + motion + 3D tracking.", "url": "https://vimeo.com/1246541621", "creditText": "Paladini · Borgonovo Publicidad · 2025"}, {"@type": "VideoObject", "name": "URG Plus · Animated spot", "description": "TV spot, animated end to end. Role: Full animation.", "url": "https://vimeo.com/1246541731", "creditText": "URG Urgencias (OSDE) · La Idea agency · 2026"}, {"@type": "VideoObject", "name": "Crucianelli · Showcase", "description": "Pieces for the brand. Role: Editing + motion graphics.", "url": "https://vimeo.com/1246540554", "creditText": "Crucianelli · Borgonovo Publicidad"}, {"@type": "VideoObject", "name": "Paladini × Olga · Rosario Day", "description": "Vertical social piece, built on the design team's graphics. Role: Editing + motion.", "url": "https://vimeo.com/1246542058", "creditText": "Paladini · Borgonovo Publicidad · 2025"}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@112,500;112,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: an edit suite — a header like a project bin, four profile "tracks" as entry points, and pieces laid out as clips on a timeline grid. */
+:root{
+  --bg:#0e0f12;          /* suite background */
+  --panel:#16181d;       /* panel / track */
+  --line:#2a2d35;        /* hairlines */
+  --fg:#e9eaee;          /* primary text */
+  --muted:#8d93a1;       /* secondary text */
+  --clip:#3d6fd6;        /* clip outline blue (from the banner) */
+  --playhead:#e0561b;    /* playhead orange (from the banner) */
+  --display:"Archivo", "Arial Narrow", system-ui, sans-serif;
+  --body:"Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.55;margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:2px solid var(--playhead);outline-offset:3px}
+.mono{font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--muted)}
+
+/* header */
+header{padding-block:40px 28px;border-bottom:1px solid var(--line)}
+.topbar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.lang{display:flex;border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.lang button{background:none;border:0;color:var(--muted);font-family:var(--mono);font-size:12px;padding:6px 10px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--fg);color:var(--bg)}
+h1{font-family:var(--display);font-stretch:112%;font-weight:800;font-size:clamp(44px,9vw,104px);line-height:.92;letter-spacing:-.02em;margin:28px 0 14px;text-wrap:balance}
+.lede{max-width:62ch;font-size:clamp(17px,2.1vw,20px);color:var(--fg);margin:0}
+.lede b{font-weight:600}
+.contact{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--panel);color:var(--fg);border-radius:4px;padding:9px 14px;font-family:var(--mono);font-size:13px;text-decoration:none;cursor:pointer}
+.btn:hover{border-color:var(--clip)}
+.btn.primary{border-color:var(--playhead)}
+.copied{font-family:var(--mono);font-size:12px;color:var(--playhead)}
+
+/* tracks = four entry points */
+.tracks{margin-top:32px;border:1px solid var(--line);border-radius:6px;overflow:hidden;background:var(--panel)}
+.ruler{height:26px;border-bottom:1px solid var(--line);position:relative;
+  background-image:repeating-linear-gradient(90deg,#3a3e47 0 1px,transparent 1px 22px),repeating-linear-gradient(90deg,#5a5f6b 0 1px,transparent 1px 110px);
+  background-size:100% 10px,100% 18px;background-repeat:no-repeat}
+.ruler span{position:absolute;bottom:3px;font-family:var(--mono);font-size:10px;color:var(--muted)}
+.track{display:grid;grid-template-columns:72px 1fr;align-items:stretch;border-bottom:1px solid var(--line);width:100%;background:none;border-left:0;border-right:0;border-top:0;color:inherit;text-align:left;cursor:pointer;padding:0;font:inherit}
+.track:last-child{border-bottom:0}
+.track .id{font-family:var(--mono);font-size:12px;color:var(--muted);display:flex;align-items:center;justify-content:center;border-right:1px solid var(--line);padding:14px 0}
+.track .name{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:14px 18px;flex-wrap:wrap;min-width:0}
+.track .name strong{font-family:var(--display);font-stretch:112%;font-weight:500;font-size:19px}
+.track .name em{font-style:normal;font-family:var(--mono);font-size:12px;color:var(--muted)}
+.track:hover .name strong{color:#fff}
+.track[aria-selected="true"]{background:#1d2027;box-shadow:inset 3px 0 0 var(--playhead)}
+.track[aria-selected="true"] .id{color:var(--playhead)}
+
+/* profile intro */
+.intro{padding-block:34px 10px;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:32px}
+.intro h2{font-family:var(--display);font-stretch:112%;font-weight:800;font-size:clamp(26px,4vw,38px);line-height:1.05;margin:6px 0 12px;text-wrap:balance}
+.intro p{margin:0 0 10px;max-width:60ch;color:#cfd2da}
+.tools{display:flex;flex-wrap:wrap;gap:6px;align-content:flex-start}
+.tools span{font-family:var(--mono);font-size:12px;border:1px solid var(--line);border-radius:3px;padding:4px 8px;color:#cfd2da}
+.tools h3{width:100%;margin:0 0 4px;font-family:var(--mono);font-size:11px;font-weight:400;color:var(--muted);letter-spacing:.1em;text-transform:uppercase}
+
+/* clips grid */
+.grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px;padding-block:22px 40px}
+.clip{grid-column:span 3;display:flex;flex-direction:column;text-decoration:none;color:inherit;min-width:0}
+.clip.vertical{grid-column:span 2}
+.clip.reel{grid-column:span 6}
+.frame{position:relative;border-radius:4px;overflow:hidden;outline:2px solid var(--clip);outline-offset:-2px;background:#000;aspect-ratio:16/9}
+.clip.vertical .frame{aspect-ratio:4/5}
+.frame img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+.clip:hover .frame img{transform:scale(1.03)}
+.clip:hover .frame{outline-color:var(--playhead)}
+.file{position:absolute;left:8px;top:8px;background:#0e0f12cc;color:#e8eaee;font-family:var(--mono);font-size:11px;padding:3px 7px;border-radius:2px;max-width:calc(100% - 16px);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.play{position:absolute;right:10px;bottom:10px;font-family:var(--mono);font-size:11px;background:var(--playhead);color:#0e0f12;padding:4px 8px;border-radius:2px;font-weight:600}
+.meta{padding-top:12px;display:flex;flex-direction:column;gap:4px}
+.meta h3{margin:0;font-family:var(--display);font-stretch:112%;font-weight:500;font-size:20px;line-height:1.2}
+.meta .who{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.meta p{margin:4px 0 0;color:#cfd2da;font-size:15px}
+.reel .frame{aspect-ratio:auto;min-height:220px;display:flex;align-items:flex-end;padding:22px;background:
+  linear-gradient(90deg,transparent 0 49.6%,var(--playhead) 49.6% 49.9%,transparent 49.9%),
+  repeating-linear-gradient(90deg,#16181d 0 16%,#1d2230 16% 16.6%)}
+.reel .frame strong{font-family:var(--display);font-stretch:112%;font-weight:800;font-size:clamp(30px,6vw,64px);line-height:1;position:relative}
+.empty{grid-column:span 6;border:1px dashed var(--line);border-radius:6px;padding:28px;color:#cfd2da;max-width:none}
+.empty strong{display:block;font-family:var(--display);font-stretch:112%;font-size:20px;margin-bottom:6px;color:var(--fg)}
+
+/* clients */
+.clients{border-top:1px solid var(--line);padding-block:32px}
+.marquee{margin-top:14px;overflow:hidden;border-block:1px solid var(--line);-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.marquee ul{list-style:none;margin:0;padding:22px 0;align-items:center;display:flex;gap:56px;width:max-content;animation:roll 38s linear infinite}
+.marquee:hover ul{animation-play-state:paused}
+.marquee li{font-family:var(--display);font-stretch:112%;font-weight:800;font-size:clamp(22px,3.2vw,34px);color:#cfd2da;white-space:nowrap;display:flex;align-items:center;gap:56px}
+.marquee li::after{content:"";width:6px;height:6px;border-radius:50%;background:var(--playhead)}
+.marquee img{display:block;width:auto;max-width:none;opacity:.82;transition:opacity .2s}
+.marquee li:hover img{opacity:1}
+@keyframes roll{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.marquee ul{animation:none;flex-wrap:wrap;width:auto;gap:12px 28px}.marquee li::after{display:none}}
+footer{border-top:1px solid var(--line);padding-block:28px 48px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+@media (max-width:760px){
+  .intro{grid-template-columns:minmax(0,1fr);gap:18px}
+  .clip,.clip.reel{grid-column:span 6}
+  .clip.vertical{grid-column:span 3}
+  .track{grid-template-columns:52px 1fr}
+}
+@media (prefers-reduced-motion:reduce){.frame img{transition:none}}
+
+html[lang="en"] .es{display:none!important} html:not([lang="en"]) .en{display:none!important}
+.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:6px;overflow:hidden;margin-top:26px}
+.facts div{background:var(--panel);padding:12px 14px;min-width:0}
+.facts dt{font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--muted);text-transform:uppercase}
+.facts dd{margin:4px 0 0;font-size:15px}
+.role{display:inline-block;font-family:var(--mono);font-size:11px;color:var(--fg);border:1px solid var(--clip);border-radius:3px;padding:2px 6px;margin-top:4px;width:fit-content}
+.prof[hidden]{display:none}
+.tools h3 span{border:0;padding:0;color:inherit;font-size:inherit}
+@media (max-width:760px){.facts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+</style>
+<div class="wrap">
+  <header>
+    <div class="topbar">
+      <span class="mono">URIEL_PALACIOS · ROSARIO, AR · <span class="es" lang="es">REMOTO</span><span class="en" lang="en">REMOTE</span></span>
+      <div class="lang" role="group" aria-label="Idioma / Language">
+        <button type="button" id="lang-es" aria-pressed="true">ES</button>
+        <button type="button" id="lang-en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+    <h1>Uriel Palacios</h1>
+    <p class="lede"><span class="es" lang="es">Editor, motion designer y productor audiovisual. <b>Más de 10 años</b> en televisión, agencias y proyectos internacionales, hoy con <b>IA generativa</b> dentro del flujo.</span><span class="en" lang="en">Video editor, motion designer and audiovisual producer. <b>10+ years</b> across TV, agencies and international projects, now with <b>generative AI</b> in the workflow.</span></p>
+    <dl class="facts">
+      <div><dt><span class="es" lang="es">Ubicación</span><span class="en" lang="en">Location</span></dt><dd><span class="es" lang="es">Rosario, Argentina · remoto</span><span class="en" lang="en">Rosario, Argentina · remote</span></dd></div>
+      <div><dt><span class="es" lang="es">Huso horario</span><span class="en" lang="en">Time zone</span></dt><dd>UTC−3</dd></div>
+      <div><dt><span class="es" lang="es">Idiomas</span><span class="en" lang="en">Languages</span></dt><dd><span class="es" lang="es">Español nativo · Inglés avanzado</span><span class="en" lang="en">Spanish (native) · English (advanced)</span></dd></div>
+      <div><dt><span class="es" lang="es">Experiencia</span><span class="en" lang="en">Experience</span></dt><dd><span class="es" lang="es">TV, agencias, streaming · desde 2013</span><span class="en" lang="en">TV, agencies, streaming · since 2013</span></dd></div>
+    </dl>
+    <div class="contact">
+      <button type="button" class="btn primary" id="copy-mail">urielalej@gmail.com</button>
+      <a class="btn" href="https://www.linkedin.com/in/uriel--palacios" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a class="btn" href="https://www.youtube.com/watch?v=dv-MB7ry_mk" target="_blank" rel="noopener">Reel ↗</a>
+      <span class="copied" id="copied" hidden></span>
+    </div>
+    <nav class="tracks" aria-label="Perfiles" role="tablist">
+      <div class="ruler" aria-hidden="true"><span style="left:23%">00:00:10:00</span><span style="left:48%">00:00:20:00</span><span style="left:73%">00:00:30:00</span></div>
+      <button type="button" class="track" role="tab" id="track-todo" data-prof="todo" aria-selected="true"><span class="id">V0</span><span class="name"><strong><span class="es" lang="es">Todo</span><span class="en" lang="en">All</span></strong><em><span class="es" lang="es">Selección completa</span><span class="en" lang="en">Full selection</span></em></span></button><button type="button" class="track" role="tab" id="track-editor" data-prof="editor" aria-selected="false"><span class="id">V1</span><span class="name"><strong><span class="es" lang="es">Editor / Motion</span><span class="en" lang="en">Editor / Motion</span></strong><em><span class="es" lang="es">Edición · motion graphics · VFX</span><span class="en" lang="en">Editing · motion graphics · VFX</span></em></span></button><button type="button" class="track" role="tab" id="track-creativo" data-prof="creativo" aria-selected="false"><span class="id">V2</span><span class="name"><strong><span class="es" lang="es">Creativo audiovisual</span><span class="en" lang="en">Creative generalist</span></strong><em><span class="es" lang="es">La pieza completa</span><span class="en" lang="en">The full piece</span></em></span></button><button type="button" class="track" role="tab" id="track-marketing" data-prof="marketing" aria-selected="false"><span class="id">V3</span><span class="name"><strong><span class="es" lang="es">Marketing de contenidos</span><span class="en" lang="en">Content marketing</span></strong><em><span class="es" lang="es">Comunicación con producción propia</span><span class="en" lang="en">Communication with in-house production</span></em></span></button><button type="button" class="track" role="tab" id="track-ia" data-prof="ia" aria-selected="false"><span class="id">V4</span><span class="name"><strong><span class="es" lang="es">Video con IA</span><span class="en" lang="en">AI video production</span></strong><em><span class="es" lang="es">Producción con IA generativa</span><span class="en" lang="en">Generative AI production</span></em></span></button>
+    </nav>
+  </header>
+  <div class="intro prof" data-prof="todo"><div><span class="mono">V0 · <span class="es" lang="es">TODO</span><span class="en" lang="en">ALL</span></span><h2><span class="es" lang="es">Video, motion y VFX para marcas, TV y streaming.</span><span class="en" lang="en">Video, motion and VFX for brands, TV and streaming.</span></h2><p><span class="es" lang="es">Una selección de piezas recientes. Cada perfil filtra lo que corresponde a ese tipo de trabajo.</span><span class="en" lang="en">A selection of recent work. Each profile filters the pieces that fit that kind of role.</span></p></div><div class="tools"><h3><span class="es" lang="es">Herramientas</span><span class="en" lang="en">Tools</span></h3><span>Premiere</span><span>After Effects</span><span>Blender</span><span>Photoshop</span><span>Illustrator</span></div></div><div class="intro prof" data-prof="editor" hidden><div><span class="mono">V1 · <span class="es" lang="es">EDITOR / MOTION</span><span class="en" lang="en">EDITOR / MOTION</span></span><h2><span class="es" lang="es">Edición, motion graphics y composición VFX.</span><span class="en" lang="en">Editing, motion graphics and VFX compositing.</span></h2><p><span class="es" lang="es">Compuse efectos visuales para la segunda temporada de Entrelazados (Disney+), hice motion y animación para spots de Universal y Telemundo, y edité y animé campañas para marcas como Paladini, Pilay y Crucianelli.</span><span class="en" lang="en">I composited VFX for season 2 of Entrelazados (Disney+), did motion and animation for Universal and Telemundo spots, and edited and animated campaigns for brands like Paladini, Pilay and Crucianelli.</span></p></div><div class="tools"><h3><span class="es" lang="es">Herramientas</span><span class="en" lang="en">Tools</span></h3><span>Premiere</span><span>After Effects</span><span>Blender</span></div></div><div class="intro prof" data-prof="creativo" hidden><div><span class="mono">V2 · <span class="es" lang="es">CREATIVO AUDIOVISUAL</span><span class="en" lang="en">CREATIVE GENERALIST</span></span><h2><span class="es" lang="es">De la idea a la salida: video, motion y diseño.</span><span class="en" lang="en">From idea to delivery: video, motion and design.</span></h2><p><span class="es" lang="es">Resuelvo la pieza completa para redes, estadios, vía pública y TV: idea, edición, motion, diseño y entrega en cada formato.</span><span class="en" lang="en">I deliver the full piece for social, stadiums, out-of-home and TV: idea, editing, motion, design and delivery in every format.</span></p></div><div class="tools"><h3><span class="es" lang="es">Herramientas</span><span class="en" lang="en">Tools</span></h3><span>Premiere</span><span>After Effects</span><span>Photoshop</span><span>Illustrator</span><span>Blender</span></div></div><div class="intro prof" data-prof="marketing" hidden><div><span class="mono">V3 · <span class="es" lang="es">MARKETING DE CONTENIDOS</span><span class="en" lang="en">CONTENT MARKETING</span></span><h2><span class="es" lang="es">Contenido con criterio de comunicación.</span><span class="en" lang="en">Content with a communication mindset.</span></h2><p><span class="es" lang="es">Me formé en Comunicación Social (UNR) y hoy integro el equipo de marketing de Nextbyn, donde llevo el video y las piezas multimedia para la comunicación de la empresa, redes y pauta en Meta.</span><span class="en" lang="en">Background in Social Communication (UNR). Today I&#x27;m part of Nextbyn&#x27;s marketing team, handling video and multimedia content for the company&#x27;s communication, social media and Meta ads.</span></p><p><span class="es" lang="es">Acá van piezas de campaña y redes para marcas.</span><span class="en" lang="en">Below: campaign and social pieces for brands.</span></p></div><div class="tools"><h3><span class="es" lang="es">Herramientas</span><span class="en" lang="en">Tools</span></h3><span><span class="es" lang="es">Meta Ads (en formación)</span><span class="en" lang="en">Meta Ads (training)</span></span><span>Premiere</span><span>After Effects</span><span>Photoshop</span></div></div><div class="intro prof" data-prof="ia" hidden><div><span class="mono">V4 · <span class="es" lang="es">VIDEO CON IA</span><span class="en" lang="en">AI VIDEO PRODUCTION</span></span><h2><span class="es" lang="es">Oficio audiovisual con IA generativa en el flujo.</span><span class="en" lang="en">Audiovisual craft with generative AI in the workflow.</span></h2><p><span class="es" lang="es">Uso IA para probar más ideas y producir más rápido sin bajar la calidad, siempre sobre más de 10 años de edición y postproducción.</span><span class="en" lang="en">I use AI to test more ideas and produce faster without lowering quality, built on 10+ years of editing and post-production.</span></p></div><div class="tools"><h3><span class="es" lang="es">Herramientas</span><span class="en" lang="en">Tools</span></h3><span>Magnific (Seedance, Kling, Veo)</span><span>Runway</span><span>Nano Banana</span><span>ComfyUI</span><span>ElevenLabs</span><span>Claude Code</span></div></div>
+  <section class="grid" id="grid"><a class="clip reel" data-tags="todo editor creativo" href="https://www.youtube.com/watch?v=dv-MB7ry_mk" target="_blank" rel="noopener"><div class="frame"><span class="file">DEMO_REEL_2024.mp4</span><strong>Demo reel</strong><span class="play"><span class="es" lang="es">VER ↗</span><span class="en" lang="en">WATCH ↗</span></span></div><div class="meta"><span class="who"><span class="es" lang="es">Edición, motion graphics y VFX · 2024 · YouTube</span><span class="en" lang="en">Editing, motion graphics and VFX · 2024 · YouTube</span></span></div></a><a class="clip" data-tags="todo editor" href="https://vimeo.com/1246541407" target="_blank" rel="noopener"><div class="frame"><img src="img/entrelazados.jpg" alt="Entrelazados T2 · VFX" loading="lazy"><span class="file">ENTRELAZADOS_T2_VFX.mov · DISNEY+</span><span class="play"><span class="es" lang="es">VER ↗</span><span class="en" lang="en">WATCH ↗</span></span></div><div class="meta"><h3><span class="es" lang="es">Entrelazados T2 · VFX</span><span class="en" lang="en">Entrelazados S2 · VFX</span></h3><span class="who"><span class="es" lang="es">Disney+ · con MalditoMaus · 2022</span><span class="en" lang="en">Disney+ · with MalditoMaus · 2022</span></span><span class="role"><span class="es" lang="es">Mi rol: Composición VFX</span><span class="en" lang="en">My role: VFX compositing</span></span><p><span class="es" lang="es">Composición de VFX para la segunda temporada, en After Effects.</span><span class="en" lang="en">VFX compositing for season 2, in After Effects.</span></p></div></a><a class="clip" data-tags="todo editor creativo marketing" href="https://vimeo.com/1246545247" target="_blank" rel="noopener"><div class="frame"><img src="img/pilay.jpg" alt="Pilay · Rebrand TV" loading="lazy"><span class="file">PY_TV_REBRAND_20seg.mp4</span><span class="play"><span class="es" lang="es">VER ↗</span><span class="en" lang="en">WATCH ↗</span></span></div><div class="meta"><h3><span class="es" lang="es">Pilay · Rebrand TV</span><span class="en" lang="en">Pilay · TV rebrand</span></h3><span class="who"><span class="es" lang="es">Pilay · Borgonovo Publicidad · 2026</span><span class="en" lang="en">Pilay · Borgonovo Publicidad · 2026</span></span><span class="role"><span class="es" lang="es">Mi rol: Edición + motion graphics</span><span class="en" lang="en">My role: Editing + motion graphics</span></span><p><span class="es" lang="es">Spot televisivo para el rebrand de mitad de año.</span><span class="en" lang="en">TV spot for the mid-year rebrand.</span></p></div></a><a class="clip" data-tags="todo editor creativo" href="https://vimeo.com/1246541621" target="_blank" rel="noopener"><div class="frame"><img src="img/paladini102.jpg" alt="Paladini · 102 años" loading="lazy"><span class="file">PALADINI_102_ANOS.mp4</span><span class="play"><span class="es" lang="es">VER ↗</span><span class="en" lang="en">WATCH ↗</span></span></div><div class="meta"><h3><span class="es" lang="es">Paladini · 102 años</span><span class="en" lang="en">Paladini · 102 years</span></h3><span class="who"><span class="es" lang="es">Paladini · Borgonovo Publicidad · 2025</span><span class="en" lang="en">Paladini · Borgonovo Publicidad · 2025</span></span><span class="role"><span class="es" lang="es">Mi rol: Edición + motion + tracking 3D</span><span class="en" lang="en">My role: Editing + motion + 3D tracking</span></span><p><span class="es" lang="es">Spot institucional, con la gráfica trackeada en 3D sobre locaciones.</span><span class="en" lang="en">Corporate spot, with graphics 3D-tracked onto locations.</span></p></div></a><a class="clip" data-tags="todo editor creativo" href="https://vimeo.com/1246541731" target="_blank" rel="noopener"><div class="frame"><img src="img/urg.jpg" alt="URG Plus · Spot animado" loading="lazy"><span class="file">URG_PLUS_SPOT.mp4</span><span class="play"><span class="es" lang="es">VER ↗</span><span class="en" lang="en">WATCH ↗</span></span></div><div class="meta"><h3><span class="es" lang="es">URG Plus · Spot animado</span><span class="en" lang="en">URG Plus · Animated spot</span></h3><span class="who"><span class="es" lang="es">URG Urgencias (OSDE) · agencia La Idea · 2026</span><span class="en" lang="en">URG Urgencias (OSDE) · La Idea agency · 2026</span></span><span class="role"><span class="es" lang="es">Mi rol: Animación completa</span><span class="en" lang="en">My role: Full animation</span></span><p><span class="es" lang="es">Spot televisivo animado de principio a fin.</span><span class="en" lang="en">TV spot, animated end to end.</span></p></div></a><a class="clip vertical" data-tags="todo editor creativo" href="https://vimeo.com/1246540554" target="_blank" rel="noopener"><div class="frame"><img src="img/crucianelli.jpg" alt="Crucianelli · Muestra" loading="lazy"><span class="file">CRUCIANELLI.mp4</span><span class="play"><span class="es" lang="es">VER ↗</span><span class="en" lang="en">WATCH ↗</span></span></div><div class="meta"><h3><span class="es" lang="es">Crucianelli · Muestra</span><span class="en" lang="en">Crucianelli · Showcase</span></h3><span class="who"><span class="es" lang="es">Crucianelli · Borgonovo Publicidad</span><span class="en" lang="en">Crucianelli · Borgonovo Publicidad</span></span><span class="role"><span class="es" lang="es">Mi rol: Edición + motion graphics</span><span class="en" lang="en">My role: Editing + motion graphics</span></span><p><span class="es" lang="es">Piezas para la marca.</span><span class="en" lang="en">Pieces for the brand.</span></p></div></a><a class="clip vertical" data-tags="todo creativo marketing" href="https://vimeo.com/1246542058" target="_blank" rel="noopener"><div class="frame"><img src="img/olga.jpg" alt="Paladini × Olga · Día Rosarino" loading="lazy"><span class="file">PAL_DIA_ROSARINO.mp4</span><span class="play"><span class="es" lang="es">VER ↗</span><span class="en" lang="en">WATCH ↗</span></span></div><div class="meta"><h3><span class="es" lang="es">Paladini × Olga · Día Rosarino</span><span class="en" lang="en">Paladini × Olga · Rosario Day</span></h3><span class="who"><span class="es" lang="es">Paladini · Borgonovo Publicidad · 2025</span><span class="en" lang="en">Paladini · Borgonovo Publicidad · 2025</span></span><span class="role"><span class="es" lang="es">Mi rol: Edición + motion</span><span class="en" lang="en">My role: Editing + motion</span></span><p><span class="es" lang="es">Pieza vertical para redes, sobre la gráfica del equipo de diseño.</span><span class="en" lang="en">Vertical social piece, built on the design team&#x27;s graphics.</span></p></div></a><div class="empty" data-tags="ia"><div class="es" lang="es"><strong>Piezas propias en preparación</strong>Estoy armando casos con IA generativa: proceso, antes y después, y herramientas por paso. Mientras tanto, el resto del portfolio muestra el oficio sobre el que trabajo con IA.</div><div class="en" lang="en"><strong>Own pieces in progress</strong>I&#39;m putting together generative AI case studies: process, before and after, and tools per step. Meanwhile, the rest of the portfolio shows the craft my AI work is built on.</div></div></section>
+  <section class="clients" aria-label="Clientes">
+    <span class="mono"><span class="es" lang="es">MARCAS Y CLIENTES</span><span class="en" lang="en">BRANDS AND CLIENTS</span></span>
+    <div class="marquee"><ul><li><img src="logos/disneyplus.png" alt="Disney+" style="height:46px"></li><li><img src="logos/universal.png" alt="Universal" style="height:44px"></li><li><img src="logos/telemundo.png" alt="Telemundo" style="height:56px"></li><li><img src="logos/osde.png" alt="OSDE" style="height:39px"></li><li><img src="logos/urg.png" alt="URG Urgencias" style="height:37px"></li><li><img src="logos/paladini.png" alt="Paladini" style="height:54px"></li><li><img src="logos/pilay.png" alt="Pilay" style="height:32px"></li><li><img src="logos/crucianelli.png" alt="Crucianelli" style="height:30px"></li><li><img src="logos/alicante.png" alt="Alicante" style="height:46px"></li><li><img src="logos/mercantil-andina.png" alt="Mercantil Andina" style="height:32px"></li><li><img src="logos/maizco.png" alt="Maizco" style="height:32px"></li><li><img src="logos/causer.png" alt="Causer" style="height:36px"></li><li><img src="logos/nordic-fintech.png" alt="Nordic Fintech Magazine" style="height:35px"></li><li><img src="logos/conscious-entrepreneur.png" alt="The Conscious Entrepreneur Summit" style="height:34px"></li><li aria-hidden="true"><img src="logos/disneyplus.png" alt="" style="height:46px"></li><li aria-hidden="true"><img src="logos/universal.png" alt="" style="height:44px"></li><li aria-hidden="true"><img src="logos/telemundo.png" alt="" style="height:56px"></li><li aria-hidden="true"><img src="logos/osde.png" alt="" style="height:39px"></li><li aria-hidden="true"><img src="logos/urg.png" alt="" style="height:37px"></li><li aria-hidden="true"><img src="logos/paladini.png" alt="" style="height:54px"></li><li aria-hidden="true"><img src="logos/pilay.png" alt="" style="height:32px"></li><li aria-hidden="true"><img src="logos/crucianelli.png" alt="" style="height:30px"></li><li aria-hidden="true"><img src="logos/alicante.png" alt="" style="height:46px"></li><li aria-hidden="true"><img src="logos/mercantil-andina.png" alt="" style="height:32px"></li><li aria-hidden="true"><img src="logos/maizco.png" alt="" style="height:32px"></li><li aria-hidden="true"><img src="logos/causer.png" alt="" style="height:36px"></li><li aria-hidden="true"><img src="logos/nordic-fintech.png" alt="" style="height:35px"></li><li aria-hidden="true"><img src="logos/conscious-entrepreneur.png" alt="" style="height:34px"></li></ul></div>
+  </section>
+  <footer>
+    <span class="mono"><span class="es" lang="es">Elegí un perfil arriba para ver las piezas que le corresponden.</span><span class="en" lang="en">Pick a profile above to see the matching work.</span></span>
+    <span class="mono">urielalej@gmail.com · linkedin.com/in/uriel--palacios</span>
+  </footer>
+</div>
+<script>
+let lang="es",prof="todo";
+try{const s=localStorage.getItem("up-lang");if(s==="en"||s==="es")lang=s;}catch(e){}
+const IDS=[...document.querySelectorAll(".track")].map(t=>t.dataset.prof);
+function apply(){
+  document.documentElement.lang=lang;
+  document.getElementById("lang-es").setAttribute("aria-pressed",lang==="es");
+  document.getElementById("lang-en").setAttribute("aria-pressed",lang==="en");
+  document.querySelectorAll(".track").forEach(t=>t.setAttribute("aria-selected",t.dataset.prof===prof));
+  document.querySelectorAll(".prof").forEach(p=>p.hidden=p.dataset.prof!==prof);
+  document.querySelectorAll("#grid [data-tags]").forEach(c=>c.hidden=!c.dataset.tags.split(" ").includes(prof));
+}
+function fromHash(){const h=(location.hash||"").slice(1);prof=IDS.includes(h)?h:"todo";apply();}
+document.querySelectorAll(".track").forEach(t=>t.addEventListener("click",()=>{if(t.dataset.prof==="todo"){history.replaceState(null,"",location.pathname+location.search);prof="todo";apply();}else location.hash=t.dataset.prof;}));
+window.addEventListener("hashchange",fromHash);
+["es","en"].forEach(l=>document.getElementById("lang-"+l).addEventListener("click",()=>{lang=l;try{localStorage.setItem("up-lang",l)}catch(e){}apply();}));
+const msg={es:["Mail copiado","Seleccioná el mail para copiarlo"],en:["Email copied","Select the email to copy it"]};
+document.getElementById("copy-mail").addEventListener("click",e=>{
+  const el=e.currentTarget,out=document.getElementById("copied");
+  const done=m=>{out.textContent=m;out.hidden=false;setTimeout(()=>out.hidden=true,2400);};
+  const sel=()=>{const r=document.createRange();r.selectNodeContents(el);const s=getSelection();s.removeAllRanges();s.addRange(r);};
+  try{navigator.clipboard.writeText("urielalej@gmail.com").then(()=>done(msg[lang][0]),()=>{sel();done(msg[lang][1]);});}catch(err){sel();done(msg[lang][1]);}
+});
+fromHash();
+</script>
+
+</html>
